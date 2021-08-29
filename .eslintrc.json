@@ -1,0 +1,9 @@
+/*eslint linebreak-style: ["error", "unix"]*/
+{
+  "extends": [
+    "airbnb", "airbnb-typescript/base"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
