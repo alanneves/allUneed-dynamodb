@@ -15,6 +15,6 @@
       "windows"
     ],
     "class-methods-use-this": "off",
-    "eslint consistent-return": "off"
+    "consistent-return": "off"
   }
 }
