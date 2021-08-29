@@ -13,6 +13,7 @@
       0,
       "error",
       "windows"
-    ]
+    ],
+    "class-methods-use-this": "off"
   }
 }
