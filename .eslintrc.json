@@ -1,9 +1,18 @@
-/*eslint linebreak-style: ["error", "unix"]*/
 {
   "extends": [
-    "airbnb", "airbnb-typescript/base"
+    "airbnb",
+    "airbnb-typescript/base"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [
+      0,
+      "error",
+      "windows"
+    ]
   }
 }
