@@ -1,7 +1,7 @@
 // eslint-disable-next-line max-classes-per-file
 import SignUpController from './signup';
-import { InvalidParamError, ServerError, MissingParamError } from '../errors/index';
-import EmailValidator from '../protocols/email-validator';
+import { InvalidParamError, ServerError, MissingParamError } from '../errors';
+import { EmailValidator } from '../protocols';
 
 interface SutTypes {
   sut: SignUpController,
