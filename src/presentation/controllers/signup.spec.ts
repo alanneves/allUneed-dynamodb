@@ -1,8 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import SignUpController from './signup';
-import MissingParamError from '../errors/missing-param-error';
-import InvalidParamError from '../errors/invalid-param-error';
-import ServerError from '../errors/server-error';
+import { InvalidParamError, ServerError, MissingParamError } from '../errors/index';
 import EmailValidator from '../protocols/email-validator';
 
 interface SutTypes {
@@ -12,6 +10,7 @@ interface SutTypes {
 
 const makeSut = (): SutTypes => {
   class EmailValidatorStub implements EmailValidator {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     isValid(email: string): boolean {
       return true;
     }
@@ -119,6 +118,7 @@ describe('SignUp Controller', () => {
 
   test('should return 500 if emailValidator throws error', () => {
     class EmailValidatorStub implements EmailValidator {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       isValid(email: string): boolean {
         throw new Error();
       }
