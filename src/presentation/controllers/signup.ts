@@ -28,7 +28,7 @@ export default class SignUpController implements Controller {
 
       return badRequest(new MissingParamError('a'));
     } catch (error) {
-      return internalServerError(new ServerError());
+      return internalServerError();
     }
   }
 }
